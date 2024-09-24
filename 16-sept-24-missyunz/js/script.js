@@ -6,15 +6,13 @@ function replaceName() {
 replaceName();
 
 document.getElementById('messageForm').addEventListener('submit', function(event) {  
-    event.preventDefault(); // Prevent the default form submission  
-
-    // Get form values  
+    event.preventDefault(); 
+ 
     const name = document.getElementById('name').value;  
     const date = document.getElementById('date').value;  
     const gender = document.querySelector('input[name="gender"]:checked')?.value || 'Not specified';  
     const message = document.getElementById('message').value;  
 
-    // Display results  
     const resultDiv = document.getElementById('result');  
     resultDiv.innerHTML = `  
         <strong>Current time:</strong> ${new Date().toLocaleString()}<br>  

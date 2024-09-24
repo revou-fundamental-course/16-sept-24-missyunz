@@ -9,10 +9,6 @@ h1 {
   color: #D5006D;
 }
 
-h4 {
-  color: #F8CBA6;
-}
-
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -69,8 +65,8 @@ nav > a {
 }
 
 .type-icon {
-  height: 200px; /* Increase the size */
-  width: 200px;  /* Increase the size */
+  height: 200px; 
+  width: 200px;  
   border: 1px solid;
   background-image: url("../assets/icon.jpg");
   background-size: cover;
@@ -81,18 +77,18 @@ nav > a {
 
 .type-icon h4 {
   position: absolute;
-  bottom: -50px; /* Adjust the bottom value as needed for spacing */
+  bottom: -50px; 
   left: 50%;
-  transform: translateX(-50%); /* Center the text horizontally */
-  color: white; /* Or any desired color */
+  transform: translateX(-50%); 
+  color: white; 
 }
 
 .type-icon-container {
   display: flex;
-  flex-direction: row; /* Change to row for horizontal alignment */
-  justify-content: center; /* Center the icons horizontally */
+  flex-direction: row; 
+  justify-content: center; 
   align-items: flex-end;
-  gap: 100px; /* Optional: Adds space between the icons */
+  gap: 100px; 
 }
 
 .form-container {  
@@ -100,37 +96,37 @@ nav > a {
   border-radius: 8px;  
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
   padding: 20px;  
-  max-width: 800px; /* Adjusted for side-by-side layout */  
+  max-width: 800px; 
   margin: auto;  
 }  
 
 .form-content {  
-    display: flex; /* Use flexbox for layout */  
+    display: flex; 
 }  
 
 form {  
-    flex: 1; /* Allow form to take available space */  
+    flex: 1;  
 }  
 
 .result-container {  
-    margin-left: 20px; /* Space between form and result */  
-    border: 1px solid #ccc; /* Border around result */  
-    padding: 10px; /* Padding inside result box */  
-    border-radius: 4px; /* Rounded corners */  
-    width: 300px; /* Fixed width for result box */  
+    margin-left: 20px;  
+    border: 1px solid #ccc;   
+    padding: 10px;  
+    border-radius: 4px; 
+    width: 300px;   
 }  
 
 label {  
-    display: inline-block; /* Keep labels inline */  
-    width: 30%; /* Adjust width */  
-    margin-right: 5px; /* Reduced space between label and input */  
+    display: inline-block;  
+    width: 30%; 
+    margin-right: 5px;   
 }  
 
 input[type="text"],  
 input[type="date"],  
 textarea {  
-    width: 65%; /* Adjust width to fit next to label */  
-    padding: 8px; /* Reduced padding */  
+    width: 65%;  
+    padding: 8px;  
     border: 1px solid #ccc;  
     border-radius: 4px;  
 }  
@@ -180,7 +176,7 @@ input[type="submit"]:hover {
     width: 100%; 
     object-fit: cover;
   }
-  
+
   .type-icon-container {
     flex-direction: column;
     align-items: center;

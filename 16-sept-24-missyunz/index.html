@@ -73,38 +73,31 @@
       <div class="form-content">  
       <form id="messageForm">  
       <label for="name">Nama:</label>  
-                  <input id="name" type="text" name="name" required placeholder="Name">  
+      <input id="name" type="text" name="name" required placeholder="Name">  
+      <label for="date">Tanggal Lahir:</label>  
+      <input id="date" type="date" name="date">  
+      <label for="gender">Jenis Kelamin:</label>  
+      <div class="gender-options">  
+      <input type="radio" id="male" name="gender" value="Male">  
+      <label for="male">Laki-laki</label>  
+      <input type="radio" id="female" name="gender" value="Female">  
+      <label for="female">Perempuan</label>  
+      </div>  
       
-                  <label for="date">Tanggal Lahir:</label>  
-                  <input id="date" type="date" name="date">  
+      <label for="message">Pesan:</label>  
+      <textarea id="message" name="message" placeholder="Pesan"></textarea>  
       
-                  <label for="gender">Jenis Kelamin:</label>  
-                  <div class="gender-options">  
-                      <input type="radio" id="male" name="gender" value="Male">  
-                      <label for="male">Laki-laki</label>  
-                      <input type="radio" id="female" name="gender" value="Female">  
-                      <label for="female">Perempuan</label>  
-                  </div>  
+      <input type="submit" value="Submit">  
+      </form>  
       
-                  <label for="message">Pesan:</label>  
-                  <textarea id="message" name="message" placeholder="Pesan"></textarea>  
-      
-                  <input type="submit" value="Submit">  
-              </form>  
-      
-              <div class="result-container">  
-                  <h3>Submitted Result</h3>  
-                  <div id="result"></div>  
-              </div>  
-          </div>  
+      <div class="result-container">  
+      <h3>Submitted Result</h3>  
+      <div id="result"></div>  
+      </div>  
+      </div>  
       </div>
       <script src="js/script.js"></script>
 
-          <!--Result Form-->
-          <div></div>
-        </section>
-      </main>
-      
       <footer>
         <br>
         <hr>
