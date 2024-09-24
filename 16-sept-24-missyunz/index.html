@@ -1,80 +1,113 @@
 <!DOCTYPE html>
 <html>
+
   <head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>Mini Coding Project</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-      <header>
-        <!--logo-->
-        <div class= "profile-icon"></div>
+  <header class="main-header">
+    <!--logo-->
+    <div class= "profile-icon"></div>
         
-        <!--navigation-->
-        <nav>
-          <a href= "#section-home">Home</a>
-          <a href= "#section-our-profile">Our Profile</a>
-          <a href= "#section-portfolio">Portfolio</a>
-          <a href= "#section-message-us">Message Us</a>
-        </nav>
-      </header>
-      <hr>
+    <!--navigation-->
+    <nav class="nav">
+    <a href= "#section-home">Home</a>
+    <a href= "#section-our-profile">Our Profile</a>
+    <a href= "#section-portfolio">Portfolio</a>
+    <a href= "#section-message-us">Message Us</a>
+    </nav>
+    </header>
+    <hr>
       
-      <main>
-        <!--Home-->
-        <section id= "section-home">
-        <header>
-          <h1>Hi User, Welcome to My Website</h1>
+  <main>
+    <!--Home-->
+    <section id= "section-home">
+      <header>
+        <h1>Hi <span id="name">User</span>, Welcome to My Website!</h1>
         </header>
         
-        <article>
-          <p>Lorem Ipsum Dolor Sit Amet Adipiscing</p>
+      <article>
+        <p>Lorem Ipsum Dolor Sit Amet Adipiscing</p>
           
-          <!--Photo Banner-->
-          <div class="photo-banner"></div>
-        </article>
-        <hr>
-        </section>
+    <!--Photo Banner-->
+      <div class="photo-banner">
+          <img class="img-slideshow" src="assets/pict (1).jpg" style="display:block;">
+          <img class="img-slideshow" src="assets/pict (2).jpg" style="display:none;">
+          <img class="img-slideshow" src="assets/pict (3).jpg" style="display:none;">
+      </div>
+      </article>
+      <hr>
+    </section>
         
-        <!--Our Profile-->
-        <section id= "section-our-profile">
-        <header>
-          <h1>Our Profile</h1>
-          <hr>
-        </header>
-        <div class="profile-icon-container">
-          <div class= "profile-icon"></div>
+    <!--Our Profile-->
+    <section id= "section-our-profile">
+      <header>
+      <h1>Our Profile</h1>
+      </header>
+        <div class="type-icon-container">
+          <div class= "type-icon">
           <h4>Profile 1</h4>
-        </div>
-        <div>
-          <div class= "profile-icon"></div>
+          </div>
+          <div class= "type-icon">
           <h4>Profile 2</h4>
         </div>
+        </div>
         </section>
         
-        <!--Portfolio-->
-        <section id= "section-portfolio"></section>
-                <header>
-          <h1>Portfolio</h1>
-          <hr>
+    <!--Portfolio-->
+    <section id= "section-portfolio"></section>
+      <header>
+        <h1>Portfolio</h1>
+        <hr>
         </header>
         
-        <!--Message Us-->
-        <section id= "section-message-us"></section>
-        <header>
-          <h1>Message Us</h1>
-          <hr>
-        </header>
-        
-        <section>
-          <!--Form-->
-          <form></form>
-          
+    <!--Message Us-->
+    <section id= "section-message-us"></section>
+      <h1>Want to message us?</h1>
+      <div class="form-container">  
+      <h2>Fill in the form below!</h2>  
+      <div class="form-content">  
+      <form id="messageForm">  
+      <label for="name">Nama:</label>  
+                  <input id="name" type="text" name="name" required placeholder="Name">  
+      
+                  <label for="date">Tanggal Lahir:</label>  
+                  <input id="date" type="date" name="date">  
+      
+                  <label for="gender">Jenis Kelamin:</label>  
+                  <div class="gender-options">  
+                      <input type="radio" id="male" name="gender" value="Male">  
+                      <label for="male">Laki-laki</label>  
+                      <input type="radio" id="female" name="gender" value="Female">  
+                      <label for="female">Perempuan</label>  
+                  </div>  
+      
+                  <label for="message">Pesan:</label>  
+                  <textarea id="message" name="message" placeholder="Pesan"></textarea>  
+      
+                  <input type="submit" value="Submit">  
+              </form>  
+      
+              <div class="result-container">  
+                  <h3>Submitted Result</h3>  
+                  <div id="result"></div>  
+              </div>  
+          </div>  
+      </div>
+      <script src="js/script.js"></script>
+
           <!--Result Form-->
           <div></div>
         </section>
       </main>
       
       <footer>
+        <br>
+        <hr>
         <p>Made by missyunz@2024</p>
       </footer>
   </body>
