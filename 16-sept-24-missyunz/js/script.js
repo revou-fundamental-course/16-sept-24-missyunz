@@ -1,3 +1,4 @@
+// User input their name
 function replaceName() {
     let name = prompt("Who is this?", "");
     document.getElementById("name").innerHTML = name;
@@ -5,6 +6,7 @@ function replaceName() {
 
 replaceName();
 
+// Submitted form
 document.getElementById('messageForm').addEventListener('submit', function(event) {  
     event.preventDefault(); 
  
@@ -16,13 +18,14 @@ document.getElementById('messageForm').addEventListener('submit', function(event
     const resultDiv = document.getElementById('result');  
     resultDiv.innerHTML = `  
         <strong>Current time:</strong> ${new Date().toLocaleString()}<br>  
-        <strong>Nama:</strong> ${name}<br>  
-        <strong>Tanggal Lahir:</strong> ${date}<br>  
-        <strong>Jenis Kelamin:</strong> ${gender}<br>  
-        <strong>Pesan:</strong> ${message}  
+        <strong>Name:</strong> ${name}<br>  
+        <strong>Birth Date:</strong> ${date}<br>  
+        <strong>Gender:</strong> ${gender}<br>  
+        <strong>Message:</strong> ${message}  
     `;  
 });
 
+// Banner slideshow
 var slideIndex = 1;
 showDivs(slideIndex);
 

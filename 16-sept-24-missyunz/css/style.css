@@ -1,14 +1,15 @@
 body {  
   font-family: Arial, sans-serif;  
-  background-color: #F4C2D9; 
+  background-color: #fcf7f8; 
   margin: 0;  
   padding: 20px;  
 }  
 
 h1 {
-  color: #D5006D;
+  color: #ca496d;
 }
 
+/* Header */
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -27,16 +28,17 @@ h1 {
 nav > a {
   border: 1px solid;
   padding: 8px;
-  color: black;
+  color: #eb5780;
   text-decoration: none;
 }
 
+/* Photo Banner */
 .photo-banner {
   border: 1px solid;
   position:relative;
   background-position: center;
   background-size: cover;
-  height: 480px;
+  height: 380px;
   overflow: hidden;
 }
 
@@ -48,6 +50,8 @@ nav > a {
   height: 100%;
   object-fit: cover;
 }
+
+/* Icon */
 .profile-icon {
   height: 50px;
   width: 50px;
@@ -64,6 +68,7 @@ nav > a {
   align-items: center;
 }
 
+/* Our Profile Icons */
 .type-icon {
   height: 200px; 
   width: 200px;  
@@ -80,7 +85,7 @@ nav > a {
   bottom: -50px; 
   left: 50%;
   transform: translateX(-50%); 
-  color: white; 
+  color: #eb5780; 
 }
 
 .type-icon-container {
@@ -91,6 +96,46 @@ nav > a {
   gap: 100px; 
 }
 
+/* About Us */
+.portfolio {
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.portfolio-content {
+  max-width: 600px;
+}
+
+.portfolio-content h1 {
+  position: relative;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.portfolio-content h3 {
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+  color: #FFA9B2;
+}
+
+.portfolio-content p {
+  position: relative;
+  font-size: 16px;
+  margin: 20px 0 40px;
+}
+
+/* Form */
+.form-content {  
+    display: flex; 
+}  
+
+form {  
+    flex: 1;  
+}  
+
 .form-container {  
   background-color: white;  
   border-radius: 8px;  
@@ -98,14 +143,6 @@ nav > a {
   padding: 20px;  
   max-width: 800px; 
   margin: auto;  
-}  
-
-.form-content {  
-    display: flex; 
-}  
-
-form {  
-    flex: 1;  
 }  
 
 .result-container {  
@@ -136,7 +173,7 @@ textarea {
 }  
 
 input[type="submit"] {  
-    background-color: #A0D3C2;  
+    background-color: #fe7fa383;  
     color: white;  
     border: none;  
     padding: 10px;  
@@ -146,7 +183,7 @@ input[type="submit"] {
 }  
 
 input[type="submit"]:hover {  
-    background-color: #45a049;  
+    background-color: #eb5780;  
 }  
 
 .gender-options {  
@@ -158,6 +195,7 @@ input[type="submit"]:hover {
     margin-right: 5px;  
 }
 
+/* Responsive */
 @media only screen and (max-width: 600px) {
   .main-header {
     flex-direction: column;
