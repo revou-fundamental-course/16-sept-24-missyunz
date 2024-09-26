@@ -1,0 +1,325 @@
+body {  
+  font-family: 'Poppins', sans-serif;  
+  background-color: #fcf7f8; 
+  margin: 0;  
+  padding: 20px;  
+}  
+
+h1 {
+  color: #ca496d;
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.main-header > .nav {
+  display: flex;
+}
+  
+.nav {
+  display: flex;
+  margin-left: auto;
+}
+  
+nav > a {
+  border: 1px solid;
+  padding: 8px;
+  color: #eb5780;
+  text-decoration: none;
+}
+
+/* Photo Banner */
+.photo-banner {
+  border: 1px solid;
+  position:relative;
+  background-position: center;
+  background-size: cover;
+  height: 380px;
+  overflow: hidden;
+}
+
+.img-slideshow {
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Icon */
+.profile-icon {
+  height: 50px;
+  width: 50px;
+  border: 1px solid;
+  background-image: url("../assets/icon.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+  
+.profile-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Section Header */  
+#section-our-profile header {  
+  text-align: center; /* Center the header */  
+  margin-bottom: 20px; /* Space below the header */  
+  color: #eb5780; /* Header color */  
+}  
+
+/* Our Profile Icons */  
+.type-icon {  
+  height: 200px;   
+  width: 200px;  
+  border: 2px solid #eb5780; 
+  background-size: cover;  
+  background-position: center;  
+  border-radius: 50%;  
+  position: relative;  
+  transition: transform 0.3s; /* Smooth hover effect */  
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}  
+
+.type-icon:hover {  
+  transform: scale(1.05); /* Slightly enlarge on hover */  
+}  
+
+.type-icon h4 {  
+  position: absolute;  
+  bottom: -100px;   
+  left: 50%;  
+  transform: translateX(-50%);   
+  color: #eb5780;   
+  font-size: 1.2em; 
+  text-align: center;  
+}  
+
+.type-icon p {  
+  position: absolute;  
+  top: 265px;   
+  left: 50%;  
+  transform: translateX(-50%);   
+  color: black;   
+  text-align: center;  
+}  
+
+.type-icon-container {  
+  display: flex;  
+  justify-content: center;   
+  align-items: flex-end;  
+  gap: 50px; /* Adjust gap between icons */  
+  margin: 0 auto; /* Center the container */  
+  max-width: 800px; /* Limit the width */  
+}  
+
+/* About Us */ 
+.portfolio {  
+  display: flex;  
+  align-items: center; /* Align items vertically */  
+  padding: 0 10%;  
+}  
+
+.portfolio-content {  
+  max-width: 600px; /* Limit the width of the text content */  
+}  
+
+.portfolio-content h1 {  
+  font-size: 50px;  
+  font-weight: 700;  
+  line-height: 1.2;  
+}  
+
+.portfolio-content h3 {  
+  font-size: 30px;  
+  font-weight: 700;  
+  color: #FFA9B2;  
+}  
+
+.portfolio-content p {  
+  font-size: 16px;  
+  margin: 20px 0 40px;  
+}  
+
+.image {  
+  width: 200%; 
+  text-align: right; /* Align image to the right */  
+  margin-left: 40px;
+}  
+
+.image img {  
+  max-width: 100%; 
+  height: auto; 
+  transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.image img:hover {  
+  transform: scale(1.05); /* Slightly enlarge on hover */  
+}  
+
+/* Form */
+.form-content {  
+    display: flex; 
+}  
+
+form {  
+    flex: 1;  
+}  
+
+.form-container {  
+  background-color: white;  
+  border-radius: 8px;  
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
+  padding: 20px;  
+  max-width: 800px; 
+  margin: auto;  
+}  
+
+.result-container {  
+    margin-left: 20px;  
+    border: 1px solid #ccc;   
+    padding: 10px;  
+    border-radius: 4px; 
+    width: 300px;   
+}  
+
+label {  
+    display: inline-block;  
+    width: 30%; 
+    margin-right: 5px;   
+}  
+
+input[type="text"],  
+input[type="date"],  
+textarea {  
+    width: 65%;  
+    padding: 8px;  
+    border: 1px solid #ccc;  
+    border-radius: 4px;  
+}  
+
+textarea {  
+    height: 100px;  
+}  
+
+input[type="submit"] {  
+    background-color: #fe7fa383;  
+    color: white;  
+    border: none;  
+    padding: 10px;  
+    border-radius: 4px;  
+    cursor: pointer;  
+    width: 100%;  
+}  
+
+input[type="submit"]:hover {  
+    background-color: #eb5780;  
+}  
+
+.gender-options {  
+    display: flex;  
+    align-items: center;  
+}  
+
+.gender-options input {  
+    margin-right: 5px;  
+}
+
+/* Footer */
+footer {
+  background-color: #FFC5C5; 
+  padding: 20px;
+  color: #333; 
+}
+
+.copyright {
+  font-size: 14px;
+  color: #666; 
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {  
+  .main-header {  
+    flex-direction: column;  
+  }  
+
+  .nav {  
+    width: 100%;  
+    flex-direction: column;  
+  }  
+
+  .profile-icon {  
+    margin-bottom: 14px;  
+  }  
+
+  .type-icon {  
+    width: 100%;   
+    object-fit: cover;  
+  }  
+
+  .type-icon-container {  
+    flex-direction: column;  
+    align-items: center;  
+    gap: 20px; /* Reduce gap */  
+  }  
+}  
+ 
+@media only screen and (max-width: 900px) {  
+  .main-header {  
+    padding: 10px; /* Add padding for smaller screens */  
+  }  
+
+  .portfolio {  
+    text-align: center; /* Center text on smaller screens */  
+  }  
+
+  .form-container {  
+    flex-direction: column; /* Stack form elements */  
+    align-items: center; /* Center align */  
+  }  
+
+  .form-container input,  
+  .form-container textarea {  
+    width: 90%; /* Make inputs full width */  
+    margin-bottom: 10px; /* Add space between inputs */  
+  }  
+
+  .result-container {  
+    width: 90%; /* Make result box full width */  
+    margin-top: 10px; /* Add space above */  
+  }  
+}  
+
+@media only screen and (max-width: 400px) {  
+  .type-icon-container {  
+    gap: 15px; /* Further reduce gap */  
+  }  
+
+  .nav {  
+    font-size: 14px; /* Smaller font size for navigation */  
+  }  
+
+  .main-header h1 {  
+    font-size: 24px; /* Adjust header size */  
+  }  
+
+}
+
+@media only screen and (max-width: 600px) {  
+  .image {  
+    width: 5000px; /* Increase size on smaller screens */  
+  }  
+}  
+
+@media only screen and (max-width: 400px) {  
+  .image {  
+    width: 2000px; /* Further increase size on very small screens */  
+  }  
+}  
