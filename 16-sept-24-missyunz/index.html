@@ -16,8 +16,8 @@
     <!--navigation-->
     <nav class="nav">
     <a href= "#section-home">Home</a>
-    <a href= "#section-our-profile">Our Profile</a>
-    <a href= "#section-portfolio">Portfolio</a>
+    <a href= "#section-our-profile">Profile</a>
+    <a href= "#section-portfolio">About</a>
     <a href= "#section-message-us">Message Us</a>
     </nav>
     </header>
@@ -28,10 +28,10 @@
     <section id= "section-home">
       <header>
         <h1>Hi <span id="name">User</span>, Welcome to Our Website!</h1>
-        </header>
+      </header>
         
       <article>
-        <p>Welcome to Heartfelt Botanicals, your one-stop destination for exquisite floral arrangements and botanical treasures. Nestled in the heart of the community, we pride ourselves on creating stunning bouquets and unique floral designs that celebrate life's most cherished moments.</p>
+        <p>Welcome to <b><i>Heartfelt Botanicals</i></b>, your one-stop destination for exquisite floral arrangements and botanical treasures. Nestled in the heart of the community, we pride ourselves on creating stunning bouquets and unique floral designs that celebrate life's most cherished moments.</p>
           
     <!--Photo Banner-->
       <div class="photo-banner">
@@ -43,37 +43,38 @@
       <hr>
     </section>
         
-    <!--Our Profile-->
-    <section id= "section-our-profile">
-      <header>
-      <h1>Our Profile</h1>
-      </header>
-        <div class="type-icon-container">
-          <div class= "type-icon">
-          <h4>Profile 1</h4>
-          </div>
-          <div class= "type-icon">
-          <h4>Profile 2</h4>
-        </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <hr>
-        </section>
+    <!-- Our Profile -->  
+    <section id="section-our-profile">  
+    <header>  
+    <h1>What do we do?</h1>  
+    </header>  
+    <div class="type-icon-container">  
+      <div class="type-icon type-icon-1" style="background-image: url('../assets/custom bouquet.jpg');">  
+          <h4>Flower Arrangements</h4>  
+          <p>Custom bouquets for events.</p>
+      </div>  
+      <div class="type-icon type-icon-2" style="background-image: url('../assets/floral workshop.jpg');">  
+          <h4>Flower Workshops</h4>  
+          <p>DIY flower arrangement workshops.</p>  
+      </div>  
+   </div>  
+   <br><br><br><br><br><br><br><br><br>
+   <hr>
+   </section>
         
     <!--Portfolio/About-->
-    <section id= "section-portfolio"></section>
-    <section class="portfolio">
-      <header>
-        <div class="portfolio-content">
-        <h1>About Us</h1>
-        <hr>
-        <h3>Heartfelt Botanicals: Blooming with Love and Elegance</h3>
-        <p>Our shop offers a wide variety of fresh blooms, from classic roses to vibrant wildflowers, all sourced from local growers. Each bouquet is crafted with care by our talented florists, ensuring that your floral gifts are as special as the moments they represent.</p>
-        </div>
-      </section>
-      </header>
+    <section id="section-portfolio"></section>
+    <section class="portfolio">  
+      <div class="portfolio-content">  
+          <h1>About Us</h1>  
+          <hr>  
+          <h3>Heartfelt Botanicals: Blooming with Love and Elegance</h3>  
+          <p>Our shop offers a wide variety of fresh blooms, from classic roses to vibrant wildflowers, all sourced from local growers. Each bouquet is crafted with care by our talented florists, ensuring that your floral gifts are as special as the moments they represent.</p>  
+      </div>  
+      <div class="image">  
+          <img src="assets/flower bouquet.png">  
+      </div>  
+    </section>
         
     <!--Message Us-->
     <section id= "section-message-us"></section>
@@ -84,19 +85,23 @@
       <div class="form-content">  
       <form id="messageForm">  
       <label for="name">Name:</label>  
-      <input id="name" type="text" name="name" required placeholder="Name">  
+      <input id="name" type="text" name="name" required placeholder="Name" value="" autocomplete="name"> 
+      <br><br> 
       <label for="date">Birth Date:</label>  
       <input id="date" type="date" name="date" required>  
-      <label for="gender">Gender:</label>  
+      <br><br>
+      <label for="gender">Gender:</label> 
+      <br>
       <div class="gender-options">  
-      <input type="radio" id="male" name="gender" required value="Male">  
+      <input type="radio" id="male" name="gender" required value="Male" autocomplete="sex">  
       <label for="male">Male</label>  
-      <input type="radio" id="female" name="gender" required value="Female">  
+      <input type="radio" id="female" name="gender" required value="Female" autocomplete="sex">  
       <label for="female">Female</label>  
       </div>  
       
+      <br><br>
       <label for="message">Your Message:</label>  
-      <textarea id="message" name="message" required placeholder="Ask us! (Related to our shop)"></textarea>  
+      <textarea id="message" name="message" required placeholder="Ask us! (Related to our shop, ex. How can I join the workshop?)" auto></textarea>  
       
       <input type="submit" value="Submit">  
       </form>  
@@ -110,10 +115,12 @@
       <script src="js/script.js"></script>
       </main>
 
+      <br><br>
       <footer>
-        <br>
-        <hr>
-        <p>Made by missyunz@2024</p>
+          <div class="copyright">
+            &copy; 2024 Made by missyunz
+          </div>
+        </div>
       </footer>
   </body>
 </html>

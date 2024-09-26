@@ -7,22 +7,23 @@ function replaceName() {
 replaceName();
 
 // Submitted form
-document.getElementById('messageForm').addEventListener('submit', function(event) {  
-    event.preventDefault(); 
- 
-    const name = document.getElementById('name').value;  
-    const date = document.getElementById('date').value;  
-    const gender = document.querySelector('input[name="gender"]:checked')?.value || 'Not specified';  
-    const message = document.getElementById('message').value;  
+// Maaf saya gak tau kenapa namenya ga muncul, selalu "undefined" :( Saya sudah coba ulang mulu tapi tetep fail :'D
+document.getElementById('messageForm').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-    const resultDiv = document.getElementById('result');  
-    resultDiv.innerHTML = `  
-        <strong>Current time:</strong> ${new Date().toLocaleString()}<br>  
-        <strong>Name:</strong> ${name}<br>  
-        <strong>Birth Date:</strong> ${date}<br>  
-        <strong>Gender:</strong> ${gender}<br>  
-        <strong>Message:</strong> ${message}  
-    `;  
+    const name = document.getElementById('name').value;
+    const date = document.getElementById('date').value;
+    const gender = document.querySelector('input[name="gender"]:checked')?.value || 'Not specified';
+    const message = document.getElementById('message').value;
+
+    const resultDiv = document.getElementById('result');
+    resultDiv.innerHTML = `
+        <strong>Current time:</strong> ${new Date().toLocaleString()}<br>
+        <strong>Name:</strong> ${name}<br>
+        <strong>Birth Date:</strong> ${date}<br>
+        <strong>Gender:</strong> ${gender}<br>
+        <strong>Message:</strong> ${message}
+    `;
 });
 
 // Banner slideshow
